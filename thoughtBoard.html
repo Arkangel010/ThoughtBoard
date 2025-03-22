@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thought Board</title>
+
+    <!-- text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+<style>
+    .heading{
+        text-align: center; 
+        color: white; 
+        font-family: 'Dancing Script'; 
+        font-size: 4rem;
+    }
+    .container{
+            height: 90%; 
+            display: flex; 
+            background-color: #262626; 
+            margin-left: 20%; 
+            margin-right: 20%; 
+            border-radius: 20px; 
+            padding: 2%; 
+            font-family: 'Dancing Script'; 
+            color: white;
+    }
+
+    .card{
+        padding-left: 5%; 
+        padding-right: 5%;
+    }
+    .big{
+        width: 30%;
+    }
+
+    .small{
+        width: 40%;
+    }
+    @media(max-width : 680px){
+        .card{
+            width: 90%;
+            text-align: center;
+        }
+
+        .heading{
+            font-size: 50px;
+        }
+        .container{
+            flex-direction: column;
+
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    }
+</style>
+</head>
+<body style="background-color: black;">
+    <div style="height: 95vh; width: 95vw;">
+    <h1 class="heading" style="">My Thought Board</h1>
+
+    <div class="container" style="">
+        <div class="big card" style="">
+            <h2 style="font-size: xx-large;">Winston Churchill</h2>
+            <p style="font-size: x-large; text-wrap: wrap;">“When I look back on all these worries, I remember the story of an old man who said on his deathbed that he had had a lot of trouble in his life, most of which never happened.”</p>
+        </div>
+
+        <div class="big card" style=" ">
+            <div style="height: 50%;">
+                <h2 style="font-size: xx-large;">Kahlil Gibran</h2>
+                <p style="font-size: x-large; text-wrap: wrap;">“Whatever is going to happen will happen, whether we worry or not.”</p>
+            </div>
+            <div style="height: 50%;">
+                <h2 style="font-size: xx-large;">Ana Monnar</h2>
+                <p style="font-size: x-large; text-wrap: wrap;">“Whatever is going to happen will happen, whether we worry or not.”</p>
+            </div>
+        </div>
+
+        <div class="small card" style="  ">
+            <h2 style="font-size: xx-large;">Matthew</h2>
+            <p style="font-size: x-large; text-wrap: wrap;">“So don’t worry about tomorrow, for tomorrow will bring its own worries. Today’s trouble is enough for today.”</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
